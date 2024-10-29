@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.kutu {
+    width: 100px;
+    height: 100px;
+    background-color: #52bdf3; 
+    position: absolute;
+    animation: moveAndRotate 6s infinite; 
+}
+
+@keyframes moveAndRotate {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+    25% {
+        transform: translateX(20vw) rotate(360deg); 
+    }
+    50% {
+        transform: translateX(20vw) rotate(360deg);
+    }
+    75% {
+        transform: translateX(0) rotate(-360deg); 
+    }
+    100% {
+        transform: translateX(0) rotate(-360deg);
+    }
+}
